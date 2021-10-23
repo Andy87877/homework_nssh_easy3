@@ -7,7 +7,7 @@ int main() {
     float a, b, c; //三邊長
     cout << "請輸入三邊邊長: ";
     cin >> a >> b >> c;
-    if (a*b*c == 0) {//其中一邊為0
+    if ((a*b*c == 0) || (a+b <= c) || (a+c <= b) || (b+c <= a)) {//其中一邊為0 兩邊長必大於第三邊
         cout << "毫無價值";
     } else {
         float s, ans;//海龍公式的s 答案
