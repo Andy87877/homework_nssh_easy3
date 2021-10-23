@@ -1,6 +1,5 @@
 // https://replit.com/@andy8787main/homeworknssheasy35#main.cpp
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main() {
@@ -13,7 +12,7 @@ int main() {
         float s, ans;//海龍公式的s 答案
 
         s = (a+b+c)/2;
-        ans = pow((s*(s-a)*(s-b)*(s-c)),0.5);//答案  pow是次方
+        ans = (s*(s-a)*(s-b)*(s-c));//平方面積 所以不用開根號
         cout << "土地總價為" << ans << "百萬元\n";
     }
 }
