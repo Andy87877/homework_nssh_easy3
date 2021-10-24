@@ -7,13 +7,13 @@ int main() {
     for (int i = 0; i < 5; i++) {
         cout << "答案是不是" << num << endl;
         char answer = ' '; // 回答問題
-        cout << "如果答案比想的高請輸入(Y)\n想的低請輸入(N)\n如果答對起輸入其他字母\n";
+        cout << "如果答案要更高請輸入(H)\n如果答案要更低請輸入(L)\n如果答案是對的請輸入其他字母\n";
         cin >> answer;
         temp /= 2;
-        if (answer == 'Y') {
-            num -= temp;
-        } else if (answer == 'N') {
+        if (answer == 'H') {
             num += temp;
+        } else if (answer == 'L') {
+            num -= temp;
         } else {
             cout << "我猜對了!!\n";
             break;
